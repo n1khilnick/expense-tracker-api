@@ -1,39 +1,33 @@
-package com.geekster.restaurantmanagementservice.model;
+package com.geekster.expensestracker.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "products")
-public class Product {
+@Table(name = "expenses")
+public class Expense {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productId;
+    private Long expenseId;
 
-    @NotNull
-    private  String productTitle;
+    private String expenseName;
 
-    private  String description;
+    private Double amount;
 
-    @NotNull
-    private  String price;
-
-    @NotNull
-    private LocalDate purchaseDate;
+    @Past(message="Date cannot be in the future")
+    private LocalDate createdDate;
 
     @ManyToOne
     @JoinColumn(name = "fk_user_userId")
     private User user;
-
-
 
 }

@@ -1,10 +1,10 @@
-package com.geekster.restaurantmanagementservice;
+package com.geekster.expensestracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestaurantManagementServiceApplicationTests {
+class ExpensesTrackerApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.geekster.restaurantmanagementservice.model;
+package com.geekster.expensestracker.model;
 
 
 import lombok.Data;
