@@ -38,11 +38,6 @@
   http://16.16.218.61:8080/user/signin
 ```
 
-* User SignOut:
-```*.sh-session
-  http://16.16.218.61:8080/user/sign-out
-```
-
 * Add Expenses via User authentication:
 ```*.sh-session
   http://16.16.218.61:8080/user/expenses/email/{email}/token/{token}
