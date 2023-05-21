@@ -39,7 +39,7 @@ public class AuthTokenService {
     public void deleteToken(String token) {
         AuthToken token1 = tokenDao.findFirstByToken(token);
 
-        tokenDao.deleteById(Long.valueOf(token1.getTokenId()));
+        tokenDao.deleteById(token1.getTokenId());
     }
 
     public User findUserByToken(String token) {

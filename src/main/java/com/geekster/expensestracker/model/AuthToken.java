@@ -13,7 +13,7 @@ import java.util.UUID;
 public class AuthToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer tokenId;
+    private Long tokenId;
 
     private String token;
 
