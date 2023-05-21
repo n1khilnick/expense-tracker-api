@@ -12,10 +12,10 @@ public class ExpenseService {
     IExpenseDao expenseDao;
 
     public void addExpense(Expense expense) {
-
         expenseDao.save(expense);
     }
 
+    //
     public Iterable<Expense> getAllExpensesByUserId(Long userId) {
             return expenseDao.findAllExpensesByUserId(userId);
     }
