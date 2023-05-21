@@ -27,12 +27,8 @@
 
 <br>
 
-* Add User:
-```*.sh-session
-  http://16.16.218.61:8080/user
-```
 
-*  User SigUp:
+*  User SignUp:
 ```*.sh-session
   http://16.16.218.61:8080/user/signup
 ```
